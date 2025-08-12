@@ -80,22 +80,18 @@ main {
         top: 20px;
         padding: 10px 30px;
         color: var(--bg-color);
-        width: 45%;
+        max-width: 400px;
 
         h2 {
           font-weight: 600;
-          font-style: SemiBold;
-          font-size: 32px;
-          leading-trim: NONE;
-          line-height: 150%;
-          letter-spacing: -3%;
-          vertical-align: middle;
+          font-size: 2rem;
+  
         }
 
         p {
           font-weight: 500;
           font-style: Medium;
-          font-size: 16px;
+          font-size: 1rem;
           leading-trim: NONE;
           line-height: 150%;
           letter-spacing: -2%;
@@ -147,10 +143,6 @@ main {
       font-weight: 700;
       font-style: Bold;
       font-size: 16px;
-      leading-trim: NONE;
-      line-height: 150%;
-      letter-spacing: -2%;
-      vertical-align: middle;
       color: var(--accent-color);
     }
     .location-dropdown {
@@ -158,10 +150,13 @@ main {
         font-weight: 500;
         font-style: Medium;
         font-size: 12px;
-        leading-trim: NONE;
-        line-height: 100%;
-        letter-spacing: -2%;
-        vertical-align: middle;
+  
+      }
+
+      img{
+        width: auto;
+        height: auto;
+        object-fit: contain;
       }
     }
   }
@@ -178,11 +173,11 @@ main {
     }
 
     .cards-container {
-       flex-wrap: wrap;
-       margin: auto;
-       width: 100%;
-       margin-left: 5px;
-       justify-content: center;
+      flex-wrap: wrap;
+      margin: auto;
+      width: 100%;
+      margin-left: 5px;
+      justify-content: center;
 
       .card {
         width: 270px;
@@ -190,12 +185,11 @@ main {
         background-color: var(--bg-color);
         border-radius: 10px;
         padding: 30px;
-        opacity:1;
+        opacity: 1;
         position: relative;
 
         .card-content {
           .car-image {
-            
             height: 200px;
             display: flex;
             align-items: center;
@@ -203,7 +197,7 @@ main {
             opacity: 0.9;
           }
 
-          .carshaddow{
+          .carshaddow {
             position: absolute;
             top: 180px;
             left: 10px;
@@ -251,8 +245,7 @@ main {
     }
   }
 
-
-  .end-btn{
+  .end-btn {
     width: 100%;
     margin: auto;
     display: flex;
@@ -261,22 +254,20 @@ main {
     margin-top: 70px;
   }
 
-  .more-btn{
- width: 156px;
-height: 44px;
+  .more-btn {
+    width: 156px;
+    height: 44px;
 
-opacity: 1;
-border-radius: 4px;
-border: 2px solid var(--primary-color);
-background-color: var(--primary-color);
+    opacity: 1;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
 
-color: var(--bg-color);
+    color: var(--bg-color);
 
-font-family: "Plus Jakarta Sans";
-font-weight: 600;
-font-size: 14px;
-
-
+    font-family: "Plus Jakarta Sans";
+    font-weight: 600;
+    font-size: 14px;
   }
 }
 
@@ -287,7 +278,7 @@ font-size: 14px;
   justify-content: center;
 
   hr {
-    margin: 0px 0px 60px 0px;
+    margin: 0px 0px 36px 0px;
     color: #ffffff;
     opacity: 0.3;
   }
@@ -295,19 +286,25 @@ font-size: 14px;
   .footer-main-container {
     /* border: 2px solid blue; */
     max-width: 1460px;
-    height: 480px;
-    padding: 0px 30px;
+    /* height: 480px; */
+    padding: 0px 100px;
     padding-bottom: 0px;
     margin: auto;
 
     .footer-upper-container {
-      height: 340px;
+      /* height: 340px; */
       margin-top: 50px;
+      padding: 80px 10px;
+      
     }
     .footer-left {
       width: 20%;
-      margin-top: -100px;
-      justify-content: start;
+      /* border: 2px solid ; */
+      /* margin-top: -100px; */
+      padding-top: 0px;
+      margin-bottom: 70px;
+    
+      /* text-align: start; */
 
       p {
         font-size: 16px;
@@ -328,13 +325,10 @@ font-size: 14px;
     .footer-heading {
       font-family: "Plus Jakarta Sans";
       font-weight: 600;
-      font-style: SemiBold;
+
       color: #1a202c;
       font-size: 20px;
-      /* leading-trim: NONE; */
-      line-height: 150%;
-      letter-spacing: -2%;
-      vertical-align: middle;
+
     }
 
     .footer-links {
@@ -342,149 +336,191 @@ font-size: 14px;
       font-weight: 500;
       font-style: Medium;
       font-size: 16px;
-      leading-trim: NONE;
-      line-height: 150%;
-      letter-spacing: -2%;
-      vertical-align: middle;
+     
     }
 
     .footer-end-links {
       font-family: "Plus Jakarta Sans";
       font-weight: 600;
-      font-style: SemiBold;
       color: #1a202c;
       font-size: 16px;
-      leading-trim: NONE;
-      line-height: 150%;
-      letter-spacing: -2%;
-      vertical-align: middle;
+     padding-bottom: 60px;
+  
     }
   }
 }
 
-
 /* ===== Mobile Responsive Starter ===== */
 
-/* Tablets and below */
-@media (max-width: 1024px) {
 
+@media (max-width: 1286px){
 
-  header{
-
-    .head-container{
-
+    header {
+    .head-container {
+      max-width: 1460px;
+      margin: auto;
+      height: 159px;
       justify-content: space-evenly;
-      .logo{
-       
-       
-      }
 
-      .header-icons{
-        display: none;
+      .header-logo {
+        gap: 10px;
+      }
+    
+      .header-right-container {
+        align-items: start;
       }
     }
-  
   }
 
-
-  main {
-     .hero-section {
-         .add-container {
-          width: 40%;
-          margin: auto;
-             .add-text {
-
-              gap: 10px;
-                h2 {
-                    font-weight: 600;
-                 
-                    font-size: 15px;
-              
-                }
-
-                p{
-                  font-size: 10px;
-                }
-
-                button{
-                  font-size: 10px;
-                  padding: 10px 10px;
-                  
-                }
-            }
-        }
-    }
-
-    .location-container{
+ .location-container {
+      width: 90%;
+      margin: auto;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      gap: 0;
+      position: relative;
+      gap: 30px;
+
+      .filter-container {
+        position: absolute;
+        top: 33%;
+      }
+}
+}
+
+@media (max-width: 1024px) {
+  header {
+    .head-container {
+      max-width: 1460px;
+      margin: auto;
+      height: 159px;
+      justify-content: space-evenly;
+
+      .header-logo {
+        gap: 10px;
+      }
+      .header-icons {
+        display: none;
+      }
+      .header-right-container {
+        align-items: start;
+      }
     }
+  }
+
+  main {
+    .hero-section {
+      .add2 {
+        display: none;
+      }
+      .add-container {
+        width: 70%;
+        margin: auto;
+
+        .add-text {
+          gap: 10px;
+          h2 {
+            font-weight: 600;
+            line-height: 1em;
+            font-size: 1em;
+            /* margin-top: 30px; */
+          }
+
+          p {
+            font-size: 10px;
+          }
+
+          button {
+            font-size: 10px;
+            padding: 10px 10px;
+          }
+        }
+      }
+    }
+
+    .location-container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      gap: 30px;
+
+      .filter-container {
+        position: absolute;
+        top: 33%;
+      }
+    }
+  }
+
+
+  footer{
+
+    .footer-upper-container{
+      flex-direction: column;
+
+    }
+    .footer-left{
+          width: 100% !important;
+  }
+
+  .footer-end-links{
+                font-size: 11px !important;
+  }
 }
   .flex-container {
     flex-wrap: wrap;
     gap: 1rem;
   }
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-}
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
 
   .heading-container {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
-  
-  footer{
-
-  
-  .footer-upper-container{
-    flex-direction: column;
-    margin: 0%;
-  }
-  }
-
-
-
 }
 
-/* Mobile phones and below */
-@media (max-width: 768px) {
-  .card {
-    flex: 1 1 90%; /* 1 card per row */
-  }
 
-  .add2{
-    display: none;
-  }
-  .heading-container h4 {
-    font-size: 1.2rem;
-  }
 
-  .car-details {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
+@media (max-width: 786px){
+  .header-profile{
+    img{
 
-  .btn button {
-    width: 100%;
+      display: none;
+    }
+  }
+ .location-container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      gap: 30px;
+
+      .filter-container {
+        position: absolute;
+        top: 33%;
+      }
+
+    }
+
+
+footer{
+
+  /* background-color: var(--body-color) !important; */
+
+  .footer-right-container{
+   /* flex-direction: column ; */
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
   }
 }
-
-/* Small mobile devices */
-@media (max-width: 480px) {
-  body {
-    padding: 0 10px;
-  }
-
-  .heading-container h4 {
-    font-size: 1rem;
-  }
-
-  .car-prop-text {
-    font-size: 0.9rem;
-  }
 }

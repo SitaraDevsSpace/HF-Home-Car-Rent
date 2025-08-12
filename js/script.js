@@ -178,7 +178,7 @@ const popularCars = [
             <div class="carshaddow"><img src="${car.carshaddow}" alt="${car.name}"></div>
             <div class="car-details row space-between">
               ${car.specs.map(spec => `
-                <div class="car-prop row align-center gap-1">
+                <div class="car-prop row align-center gap-05">
                   <img class="car-prop-image" src="${spec.img}" alt="">
                   <h4 class="car-prop-text">${spec.text}</h4>
                 </div>
