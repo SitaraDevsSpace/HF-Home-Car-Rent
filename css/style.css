@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --body-color: #596780;
+  --primary-color: #3563e9;
+  --secondary-color: #54a6ff;
+  --text-color: #90a3bf;
+  --accent-color: #1a202c;
+}
+
+body {
+  background-color: #f6f7f9;
+
+  color: var(--body-color);
+}
+
+#header {
+  background-color: var(--bg-color);
+  .head-container {
+    max-width: 1460px;
+    margin: auto;
+    height: 124px;
+  }
+
+  .search-bar {
+    width: 492px;
+    position: relative;
+    height: 44px;
+
+    .search-icon {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      z-index: 999;
+    }
+    input {
+      /* position: relative; */
+      width: 492px;
+      height: 44px;
+      border-radius: 100px;
+      border: 1px solid #d7dbe0;
+      padding: 0px 70px;
+      font-size: 15px;
+      font-family: "Plus Jakarta Sans";
+      font-weight: 500;
+    }
+    .filter-icon {
+      position: absolute;
+      right: 20px;
+    }
+  }
+}
+
+main {
+  background-color: #f6f7f9;
+
+  .hero-section {
+    padding: 35px 0px;
+
+    .add-container {
+      width: 100%;
+      position: relative;
+
+      /* border: 2px solid red; */
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .add-text {
+        position: absolute;
+        top: 20px;
+        padding: 10px 30px;
+        color: var(--bg-color);
+        width: 45%;
+
+        h2 {
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 32px;
+          leading-trim: NONE;
+          line-height: 150%;
+          letter-spacing: -3%;
+          vertical-align: middle;
+        }
+
+        p {
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 16px;
+          leading-trim: NONE;
+          line-height: 150%;
+          letter-spacing: -2%;
+          vertical-align: middle;
+        }
+
+        button {
+          padding: 15px 20px;
+          width: 45%;
+          border: 2px solid var(--primary-color);
+          border-radius: 5px;
+          background-color: var(--primary-color);
+          color: var(--bg-color);
+
+          font-weight: 400;
+
+          font-size: 16px;
+
+          letter-spacing: -2%;
+        }
+        .add-2-btn {
+          background-color: var(--secondary-color);
+        }
+      }
+
+      .Add-1 {
+        background-color: var(--secondary-color);
+      }
+
+      .Add-2 {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+
+  .location-section {
+    background-color: var(--bg-color);
+    display: inline-block;
+    padding: 25px 40px;
+    border-radius: 10px;
+    .location {
+      padding-right: 30px;
+    }
+
+    .status {
+      margin-bottom: 10px;
+    }
+    .location-heading {
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 16px;
+      leading-trim: NONE;
+      line-height: 150%;
+      letter-spacing: -2%;
+      vertical-align: middle;
+      color: var(--accent-color);
+    }
+    .location-dropdown {
+      p {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: -2%;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .popular-cars-container {
+    .View-more {
+      font-weight: 600;
+
+      font-size: 16px;
+
+      text-align: center;
+      vertical-align: middle;
+      color: var(--primary-color);
+    }
+
+    .cards-container {
+       flex-wrap: wrap;
+       margin: auto;
+       width: 100%;
+       margin-left: 5px;
+       justify-content: center;
+
+      .card {
+        width: 270px;
+        height: 388px;
+        background-color: var(--bg-color);
+        border-radius: 10px;
+        padding: 30px;
+        opacity:1;
+        position: relative;
+
+        .card-content {
+          .car-image {
+            
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.9;
+          }
+
+          .carshaddow{
+            position: absolute;
+            top: 180px;
+            left: 10px;
+            /* border: 2px solid ; */
+          }
+          .car-price {
+            font-family: "Plus Jakarta Sans";
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--accent-color);
+          }
+          .car-prop-text {
+            font-family: "Plus Jakarta Sans";
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+          }
+
+          .car-price::after {
+            content: "day";
+            font-family: "Plus Jakarta Sans";
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            color: var(--text-color);
+          }
+        }
+      }
+
+      .card-heading {
+        h2 {
+          font-weight: 700;
+
+          font-size: 20px;
+          color: var(--accent-color);
+        }
+
+        p {
+          font-weight: 700;
+
+          font-size: 14px;
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+
+
+  .end-btn{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  .more-btn{
+ width: 156px;
+height: 44px;
+
+opacity: 1;
+border-radius: 4px;
+border: 2px solid var(--primary-color);
+background-color: var(--primary-color);
+
+color: var(--bg-color);
+
+font-family: "Plus Jakarta Sans";
+font-weight: 600;
+font-size: 14px;
+
+
+  }
+}
+
+#footer {
+  /* border: 2px solid red; */
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  justify-content: center;
+
+  hr {
+    margin: 0px 0px 60px 0px;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
+  .footer-main-container {
+    /* border: 2px solid blue; */
+    max-width: 1460px;
+    height: 480px;
+    padding: 0px 30px;
+    padding-bottom: 0px;
+    margin: auto;
+
+    .footer-upper-container {
+      height: 340px;
+      margin-top: 50px;
+    }
+    .footer-left {
+      width: 20%;
+      margin-top: -100px;
+      justify-content: start;
+
+      p {
+        font-size: 16px;
+        word-spacing: 0.7px;
+      }
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .footer-right {
+      margin-right: 90px;
+    }
+
+    .footer-heading {
+      font-family: "Plus Jakarta Sans";
+      font-weight: 600;
+      font-style: SemiBold;
+      color: #1a202c;
+      font-size: 20px;
+      /* leading-trim: NONE; */
+      line-height: 150%;
+      letter-spacing: -2%;
+      vertical-align: middle;
+    }
+
+    .footer-links {
+      font-family: "Plus Jakarta Sans";
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16px;
+      leading-trim: NONE;
+      line-height: 150%;
+      letter-spacing: -2%;
+      vertical-align: middle;
+    }
+
+    .footer-end-links {
+      font-family: "Plus Jakarta Sans";
+      font-weight: 600;
+      font-style: SemiBold;
+      color: #1a202c;
+      font-size: 16px;
+      leading-trim: NONE;
+      line-height: 150%;
+      letter-spacing: -2%;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+/* ===== Mobile Responsive Starter ===== */
+
+/* Tablets and below */
+@media (max-width: 1024px) {
+
+
+  header{
+
+    .head-container{
+
+      justify-content: space-evenly;
+      .logo{
+       
+       
+      }
+
+      .header-icons{
+        display: none;
+      }
+    }
+  
+  }
+
+
+  main {
+     .hero-section {
+         .add-container {
+          width: 40%;
+          margin: auto;
+             .add-text {
+
+              gap: 10px;
+                h2 {
+                    font-weight: 600;
+                 
+                    font-size: 15px;
+              
+                }
+
+                p{
+                  font-size: 10px;
+                }
+
+                button{
+                  font-size: 10px;
+                  padding: 10px 10px;
+                  
+                }
+            }
+        }
+    }
+
+    .location-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0;
+    }
+}
+  .flex-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+  .heading-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  footer{
+
+  
+  .footer-upper-container{
+    flex-direction: column;
+    margin: 0%;
+  }
+  }
+
+
+
+}
+
+/* Mobile phones and below */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 90%; /* 1 card per row */
+  }
+
+  .add2{
+    display: none;
+  }
+  .heading-container h4 {
+    font-size: 1.2rem;
+  }
+
+  .car-details {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .btn button {
+    width: 100%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .heading-container h4 {
+    font-size: 1rem;
+  }
+
+  .car-prop-text {
+    font-size: 0.9rem;
+  }
+}
