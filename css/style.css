@@ -303,7 +303,8 @@ main {
   hr {
     margin: 0px 0px 36px 0px;
     color: #ffffff;
-    opacity: 0.3;
+    border: 1px solid #13131329;
+    opacity: 0.5;
   }
 
   .footer-main-container {
