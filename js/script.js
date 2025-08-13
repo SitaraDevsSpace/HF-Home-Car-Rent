@@ -166,8 +166,8 @@ const popularCars = [
     data.forEach(car => {
       const cardHTML = `
         <div class="card box-shaddow column gap-1">
-          <div class="card-head row space-between">
-            <div class="card-heading Plus-Jakarta-Sans column gap-1">
+          <div class="card-head row space-start">
+            <div class="card-heading Plus-Jakarta-Sans column gap-1 align-start">
               <h2>${car.name}</h2>
               <p>${car.type}</p>
             </div>
@@ -186,7 +186,7 @@ const popularCars = [
             </div>
             <div class="car-price-details row space-between">
               <div class="car-price">${car.price}</div>
-              <div class="btn card-btn"><button>Rent Now</button></div>
+              <div class="btn card-btn"><a>Rent Now</a></div>
             </div>
           </div>
         </div>
