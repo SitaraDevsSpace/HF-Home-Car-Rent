@@ -1,18 +1,20 @@
 version: 2.1
 
 jobs:
-  build-and-deploy:
+  deploy:
     docker:
-      - image: circleci/node:16
+      - image: cimg/base:stable
     steps:
       - checkout
-      - run: npm install
-      - run: npm run build
-      - run: npm install -g netlify-cli
-      - run: netlify deploy --prod --dir=build --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
+      - run:
+          name: Install Netlify CLI
+          command: npm install -g netlify-cli
+      - run:
+          name: Deploy to Netlify
+          command: netlify deploy --prod --dir=./ --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN
 
 workflows:
   version: 2
-  build-deploy:
+  deploy_site:
     jobs:
-      - build-and-deploy
+      - deploy
